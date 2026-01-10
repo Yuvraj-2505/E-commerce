@@ -10,6 +10,7 @@ body {
   font-optical-sizing: auto;
   background: #f5f0f0;
   color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
 }
 
 .container{
@@ -38,4 +39,103 @@ nav ul button:hover{
 
 nav ul button:hover{
   background: none !important;
+}
+
+.sliderHome {
+  overflow: inherit !important;
+}
+
+/* .swiper-button-prev,.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev:after,.swiper-button-next:after {
+  font-size: 22px !important;
+  color: #000 !important;
+}  */
+
+/* .homeCatSlider {
+  overflow: inherit !important;
+}
+.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next{
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+.homeCatSlider .swiper-button-prev:after, .homeCatSlider .swiper-button-next:after{
+  font-size: 16px;
+}
+
+.homeCatSlider .swiper-button-prev{
+  left: -10px !important;
+}
+.homeCatSlider .swiper-button-next{
+  right: -10px !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover, .homeCatSlider .swiper-button-next:hover{
+  background: #ff5252 !important;
+}
+.homeCatSlider .swiper-button-prev:hover::after, .homeCatSlider .swiper-button-next:hover::after{
+  background: #fff !important;
+} */
+/* 1. Remove default swiper arrows */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none !important;
+}
+
+/* 2. Button and Icon Centering */
+.button-prev-custom,
+.button-next-custom {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important; /* Vertically centered */
+  
+  /* Circle dimensions */
+  width: 45px !important;
+  height: 45px !important;
+  background: #fff !important;
+  border-radius: 50% !important;
+  
+  /* Critical for centering the small icon */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+  color: #000 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #eee !important;
+  z-index: 1000 !important;
+  cursor: pointer;
+}
+
+/* 3. Horizontal Positioning (Halfway outside) */
+.button-prev-custom {
+  left: -22px !important;
+}
+
+.button-next-custom {
+  right: -22px !important;
+}
+
+/* 4. Hide when no more slides */
+.swiper-button-disabled {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+/* 5. Icon padding/centering tweak */
+.button-prev-custom svg,
+.button-next-custom svg {
+  display: block; /* Removes baseline spacing */
+  margin: 0 auto;
 }

@@ -1,11 +1,15 @@
 import React from 'react'
+import HomeSlider from '../../components/Homeslider/HomeSlider'
+import HomeCatSlider from '../../components/HomeCatSlider/HomeCatSlider'
 
 const Home = () => {
   return (
-    <div>
+    <>
+        <HomeSlider/>
+        <HomeCatSlider/>
 
-      Home Page
-    </div>
+        <br /><br /><br /><br /><br /><br />
+    </>
   )
 }
 
