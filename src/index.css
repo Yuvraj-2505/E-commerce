@@ -87,55 +87,69 @@ nav ul button:hover{
 .homeCatSlider .swiper-button-prev:hover::after, .homeCatSlider .swiper-button-next:hover::after{
   background: #fff !important;
 } */
-/* 1. Remove default swiper arrows */
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  display: none !important;
+
+
+/* Remove default swiper arrows */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
-/* 2. Button and Icon Centering */
+/* Arrow button */
 .button-prev-custom,
 .button-next-custom {
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important; /* Vertically centered */
-  
-  /* Circle dimensions */
-  width: 45px !important;
-  height: 45px !important;
-  background: #fff !important;
-  border-radius: 50% !important;
-  
-  /* Critical for centering the small icon */
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  
-  color: #000 !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid #eee !important;
-  z-index: 1000 !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  z-index: 20;
+
+  transition: all 0.3s ease;
 }
 
-/* 3. Horizontal Positioning (Halfway outside) */
+/* Keep arrows away from edges */
 .button-prev-custom {
-  left: -22px !important;
+  left: -16px;
 }
 
 .button-next-custom {
-  right: -22px !important;
+  right: -16px;
 }
 
-/* 4. Hide when no more slides */
-.swiper-button-disabled {
-  opacity: 0 !important;
-  visibility: hidden;
-}
-
-/* 5. Icon padding/centering tweak */
+/* Arrow icon */
 .button-prev-custom svg,
 .button-next-custom svg {
-  display: block; /* Removes baseline spacing */
-  margin: 0 auto;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease;
 }
+
+/* Hover effects */
+.button-prev-custom:hover,
+.button-next-custom:hover {
+  background: orange;
+}
+
+.button-prev-custom:hover svg,
+.button-next-custom:hover svg {
+  color: #fff;
+}
+
+/* Hide arrows when disabled */
+.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.homeCatSlider .item:hover img{transform:scale(1.2);}
