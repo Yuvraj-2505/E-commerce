@@ -210,6 +210,90 @@ const CategoryPanel = (props) => {
               </ul>
             )}
           </li>
+
+
+          <li className="list-none flex items-center relative flex-col">
+            <Link to="/" className="w-full">
+              <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">
+                Bags
+              </Button>
+            </Link>
+
+            {
+                submenuIndex === 2 ? 
+                <AiOutlineMinusSquare
+                className="absolute top-[10px] right-[15px] cursor-pointer"
+                onClick={() => openSubmenu(2)}/>
+                :
+                <MdOutlineAddBox
+                className="absolute top-[10px] right-[15px] cursor-pointer"
+                onClick={() => openSubmenu(2)}/>
+
+            }
+
+            
+            
+
+            {submenuIndex === 2 && (
+              <ul className="submenu w-full pl-3">
+                <li className="list-none relative">
+                  <Link to="/" className="w-full">
+                    <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">
+                      Apparel
+                    </Button>
+                  </Link>
+            {
+                innerSubmenuIndex === 2 ? 
+                <AiOutlineMinusSquare
+                className="absolute top-[10px] right-[15px] cursor-pointer"
+                onClick={() => openInnerSubmenu(2)}/>
+                :
+                <MdOutlineAddBox
+                className="absolute top-[10px] right-[15px] cursor-pointer"
+                onClick={() => openInnerSubmenu(2)}/>
+
+            }
+
+                  {innerSubmenuIndex === 2 && (
+                    <ul className="inner_submenu w-full pl-3">
+                      <li className="list-none relative mb-1">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
+                        >
+                          Smart Tablet
+                        </Link>
+                      </li>
+                      <li className="list-none relative mb-1">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
+                        >
+                          Crepe T-Shirt
+                        </Link>
+                      </li>
+                      <li className="list-none relative mb-1">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
+                        >
+                          Leather Watch
+                        </Link>
+                      </li>
+                      <li className="list-none relative mb-1">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left !justify-start !px-3 transition text-[14px]"
+                        >
+                          Rolling Daimond
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+              </ul>
+            )}
+          </li>
         </ul>
       </div>
     </Box>
