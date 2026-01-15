@@ -1,0 +1,47 @@
+.productItem .title{
+    line-height: 18px;
+}
+
+/* .productItem .actions button:hover svg{
+    color: #fff !important;
+}
+.productItem .actions button svg{
+    pointer-events: none !important;
+} */
+
+/* .productItem .actions:hover svg,
+.actions:hover .MuiSvgIcon-root {
+  color: white !important;
+} */
+
+/* Button base */
+.productItem .actions button {
+  background-color: white;
+  color: black;
+  width: 35px !important;
+  height: 35px !important;
+  min-height: 35px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover background */
+.productItem .actions button:hover {
+  background-color: #ff5252 !important;
+}
+
+/* Icon color changes when button is hovered */
+.productItem .actions button:hover svg {
+  color: white !important;
+}
+
+/* Click effect (scale slightly on active) */
+.productItem .actions button:active {
+  transform: scale(0.95);
+}
+
+/* Optional: smooth icon transition */
+.productItem .actions button svg {
+  transition: color 0.2s ease;
+}

@@ -52,7 +52,7 @@ const Home = () => {
 
 
           {/* //products card */}
-          <ProductsSlider items={5}/>
+          <ProductsSlider items={6}/>
 
 
 

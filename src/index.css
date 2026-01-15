@@ -172,3 +172,40 @@ nav ul button:hover{
 .MuiTab-textColorPrimary.Mui-selected{
   color: #ff5252 !important;
 }
+
+.productsSlider .swiper-wrapper{
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.MuiButton-root {
+  padding: 0 !important;
+  min-width: 0 !important;
+}
+
+
+/* Scoped for CardSwipper / ProductsSlider arrows */
+.CardSwipper .button-prev-custom,
+.CardSwipper .button-next-custom {
+  width: 50px;           /* increase clickable area */
+  height: 50px;
+}
+
+/* Increase arrow icon size */
+.CardSwipper .button-prev-custom svg,
+.CardSwipper .button-next-custom svg {
+  font-size: 35px;       /* larger arrows */
+  color: #373535;        /* default color */
+}
+
+/* Hover effects */
+.CardSwipper .button-prev-custom:hover,
+.CardSwipper .button-next-custom:hover {
+  background: #ff5252;
+}
+
+.CardSwipper .button-prev-custom:hover svg,
+.CardSwipper .button-next-custom:hover svg {
+  color: #fff;
+}

@@ -13,7 +13,7 @@ const ProductsSlider = (props) => {
   const nextRef = useRef(null);
 
   return (
-    <div className="productsSlider py-5">
+    <div className="productsSlider py-3">
       <Swiper
         spaceBetween={10}
         slidesPerView={props.items}
@@ -22,8 +22,29 @@ const ProductsSlider = (props) => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
         }}
-        className="mySwiper !overflow-visible"
+        className="CardSwipper !overflow-visible"
       >
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem/>
+        </SwiperSlide>
         <SwiperSlide>
             <ProductItem/>
         </SwiperSlide>
