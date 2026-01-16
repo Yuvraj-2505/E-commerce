@@ -17,8 +17,8 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="py-2 nav-bar-container">
-        <div className="container flex items-center justify-end gap-8 !bg-white">
+      <nav className="py-2 nav-bar-container !bg-white">
+        <div className="container flex items-center justify-end gap-8 ">
           <div className="col_1 w-[20%]">
             <Button
               className="!text-black gap-2 w-full shop-by-categories-btn !bg-white"
