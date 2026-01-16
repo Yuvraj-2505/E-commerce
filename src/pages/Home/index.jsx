@@ -89,6 +89,17 @@ const Home = () => {
         <div className="container">
             <h2 className="text-[20px] font-[600]">Latest Products</h2>
             <ProductsSlider items={6}/>
+            <AdsBannerSlider items={3} />
+        </div>
+      </section>
+
+
+      {/* Featured Products secrion */}
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+            <h2 className="text-[20px] font-[600]">Featured Products</h2>
+            <ProductsSlider items={6}/>
+            <AdsBannerSlider items={3} />
         </div>
       </section>
 
