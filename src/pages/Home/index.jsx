@@ -60,7 +60,7 @@ const Home = () => {
       </section>
 
       {/* Ads Banner         */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-4 pt-2">
         <div className="container">
           <div className="freeShipping w-[80%] m-auto p-4 py-4 border-2 border-[#ff5252] flex items-center justify-between rounded-md mb-7">
             <div className="col1 flex items-center gap-4">
@@ -80,6 +80,15 @@ const Home = () => {
           </div>
 
           <AdsBannerSlider items={4} />
+        </div>
+      </section>
+
+      
+      {/* Latest Products secrion */}
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+            <h2 className="text-[20px] font-[600]">Latest Products</h2>
+            <ProductsSlider items={6}/>
         </div>
       </section>
 
