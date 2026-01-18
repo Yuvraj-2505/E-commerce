@@ -99,7 +99,7 @@ const Home = () => {
         <div className="container">
             <h2 className="text-[20px] font-[600]">Featured Products</h2>
             <ProductsSlider items={6}/>
-            <AdsBannerSlider items={4} />
+            <AdsBannerSlider items={3} />
         </div>
       </section>
 
