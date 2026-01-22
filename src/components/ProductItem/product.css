@@ -45,3 +45,9 @@
 .productItem .actions button svg {
   transition: color 0.2s ease;
 }
+
+.productItem .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff5252;
+}
